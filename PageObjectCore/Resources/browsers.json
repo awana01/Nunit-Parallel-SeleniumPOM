@@ -1,0 +1,25 @@
+{
+  "browsers": {
+    "name1": "chrome",
+    "browsers_options":"chrome_options1"
+  },
+
+  "browsers_options": {
+    "chrome_options1": [
+      "--ignore-certificate-errors",
+      "--disable-extensions",
+      "--no-sandbox",
+      "--disable-dev-shm-usage"
+    ],
+    "chrome_options2": [
+      "--disable-infobars",
+      "--ignore-certificate-errors",
+      "--disable-extensions",
+      "--no-sandbox",
+      "--disable-dev-shm-usage"
+    ],
+    "firefox_options1": []
+  }
+  
+  
+}

@@ -1,0 +1,10 @@
+﻿{
+  "allure": {
+    "directory": "allure-results",
+    "title": "Parallel Page Automation",
+    "links": [
+      "https://example.org/{issue}",
+      "https://example.org/{tms}"
+    ]
+  }
+}
