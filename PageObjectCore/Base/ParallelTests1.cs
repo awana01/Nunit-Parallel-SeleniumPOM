@@ -45,7 +45,7 @@ namespace PageObjectCore.Base
         public void TestTear()
         {
             //driver.Close();
-            //DriverFactory.CloseDriver(); 
+            DriverFactory.CloseDriver(); 
 
         }
 
