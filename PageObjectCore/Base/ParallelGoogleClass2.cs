@@ -43,6 +43,14 @@ namespace PageObjectCore.Base
             driver.Url = "https://www.google.com";
         }
 
+        [OneTimeTearDown]
+        public void TestFinsih()
+        {
+            driver.Manage().Window.Minimize();
+            DriverFactory.CloseDriver();
+
+        }
+
         [Test]
         public void Test01_VerifySearchTest()
         {
@@ -111,12 +119,7 @@ namespace PageObjectCore.Base
 
 
 
-        [OneTimeTearDown]
-        public void TestFinsih()
-        {
-            driver.Close();
-            Console.WriteLine("Test End: " + testFullName);
-        }
+        
 
         public void click_on_Blank(IWebDriver driver)
         {

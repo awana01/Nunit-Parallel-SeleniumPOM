@@ -94,7 +94,8 @@ namespace PageObjectCore.Base
         public void TestFinsih()
         {
             driver.Manage().Window.Minimize();
-            //driver.Close();
+            DriverFactory.CloseDriver();
+            
         }
         
         public void click_on_Blank(IWebDriver driver)

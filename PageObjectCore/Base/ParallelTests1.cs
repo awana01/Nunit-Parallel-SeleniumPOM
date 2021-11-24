@@ -36,15 +36,15 @@ namespace PageObjectCore.Base
 
 
 
-            driver = new RemoteWebDriver(new Uri("http://127.0.0.1:4444/wd/hub"), options.ToCapabilities(),TimeSpan.FromSeconds(200));
-            //driver = DriverFactory.GetDriver("grid");
+            //driver = new RemoteWebDriver(new Uri("http://127.0.0.1:4444/wd/hub"), options.ToCapabilities(),TimeSpan.FromSeconds(200));
+            //driver = DriverFactory.GetDriver(null);
             //driver = DriverFactory.instance.WebDriver;
         }
 
         [TearDown]
         public void TestTear()
         {
-            driver.Close();
+            //driver.Close();
             //DriverFactory.CloseDriver(); 
 
         }
