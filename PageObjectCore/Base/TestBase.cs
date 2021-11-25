@@ -10,14 +10,15 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using PageObjectCore.Base;
 using OpenQA.Selenium.Interactions;
+using NUnit.Allure.Core;
 //using AutomCore1.Web.Utils;
 
 namespace Web
 {
 
 
+    [AllureNUnit]
     [TestFixture]
-    //[SetUpFixture]
     public class TestBase
     {
         protected IWebDriver _driver;
