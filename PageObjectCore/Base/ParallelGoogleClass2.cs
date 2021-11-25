@@ -11,8 +11,8 @@ using Web;
 namespace PageObjectCore.Base
 {
     [AllureNUnit]
-    [TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
+    [Category("Google")]
     public class ParallelGoogleClass2: TestBase
     {
 
