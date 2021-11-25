@@ -8,50 +8,45 @@ using Web;
 using Newtonsoft.Json;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using PageObjectCore.Base;
+using OpenQA.Selenium.Interactions;
 //using AutomCore1.Web.Utils;
 
 namespace Web
 {
 
-    
 
-
-
-    /*
     [TestFixture]
     //[SetUpFixture]
     public class TestBase
     {
         protected IWebDriver _driver;
-        protected static string _projBasePath = ProjectSettings.GetProjectBaseDirectory(); //GetProjectBaseDirectory();
+        protected Actions action;
+
+
+
+        //protected static string _projBasePath = ProjectSettings.GetProjectBaseDirectory(); //GetProjectBaseDirectory();
         protected string TimeToken { get; } = DateTime.Now.ToString("dd-MM-yyyy-hh-mm-ss");
         //protected string ProjectBase  = ProjectSettings.GetProjectBaseDirectory();     //GetProjectBaseDirectory();
         protected string _completeTestName = string.Empty;// { get; } = null; // completeTestName()
 
         [OneTimeSetUp]
-        public static void TestMethod1()
+        public void TestStartMethod()
         {
-           // _completeTestName = completeTestName();
-            //new TestBase().SetupProjectDirectory();
-
-            Dictionary<string,string> browser = GetProjectConfigData();
-            Browsers.Init();
-        
+           
+            _driver = DriverFactory.GetDriver("");
         }
 
 
         [OneTimeTearDown]
-        public static void CleanTest()
+        public void TestFinishMethod()
         {
-            if (Browsers.getDriver != null)
-            {
-                //Browsers.Close();
-                //Browsers.getDriver.Quit();
-            }
-
-            clearFolder(ProjectSettings.GetProjectBaseDirectory() + "/Results/SnapShots");
+            _driver.Close();
+            _driver.Quit();
+            //DriverFactory.CloseDriver();
         }
-
+    }
+        /*
         public string GetDateTimeToken()
         {
             return DateTime.Now.ToString("dd-MM-yyyy-hh-mm-ss");
