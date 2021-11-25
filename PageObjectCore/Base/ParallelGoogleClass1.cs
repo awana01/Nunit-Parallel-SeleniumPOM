@@ -14,37 +14,40 @@ using WebDriverManager.DriverConfigs.Impl;
 namespace PageObjectCore.Base
 {
     [AllureNUnit]
-    [TestFixture]
+    //[TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
-    public class ParallelGoogleClass1
+    [Category("Google")]
+    public class ParallelGoogleClass1:TestBase
     {
 
         public IWebDriver driver;
         public GooglePage googlePage;
         public GoogleSearchPage SearchPage;
 
-        [OneTimeSetUp]
+        //[OneTimeSetUp]
         
-        public void TestStart()
-        {
+        //public void TestStart()
+        //{
             
-            driver = DriverFactory.GetDriver("firefox");
+        //    driver = DriverFactory.GetDriver("firefox");
 
-            googlePage=new GooglePage();
-            //SearchPage=new GoogleSearchPage();
+        //    googlePage=new GooglePage();
+        //    //SearchPage=new GoogleSearchPage();
 
-            driver.Manage().Timeouts().ImplicitWait = new TimeSpan(0,0,15);
-            //driver.Url = "https://www.google.com";
-        }
+        //    driver.Manage().Timeouts().ImplicitWait = new TimeSpan(0,0,15);
+        //    //driver.Url = "https://www.google.com";
+        //}
     
         [Test]
         public void Test01_VerifySearchTest()
         {
-            //googlePage = new GooglePage();
-            
+            _driver.Url = "https://www.google.com";
+            _driver.Manage().Timeouts().ImplicitWait = new TimeSpan(0, 0, 15);
+            googlePage = new GooglePage();
+
             Console.WriteLine("Google Test");
 
-            IWebElement blankSpace = driver.FindElement(By.XPath("//body"));
+            IWebElement blankSpace = _driver.FindElement(By.XPath("//body"));
           
             Thread.Sleep(500);
 
@@ -58,7 +61,7 @@ namespace PageObjectCore.Base
             ////Actions action = new Actions(driver);
             ////action.Click(SearchBTN).Build().Perform();
             //Thread.Sleep(5000);
-            BrowserHelper.ScreenShotAsBase64(driver);
+            BrowserHelper.ScreenShotAsBase64(_driver);
         }
 
         [Test]
@@ -81,7 +84,7 @@ namespace PageObjectCore.Base
             SearchPage.result_TextHeading[0].Click();
             Thread.Sleep(5000);
 
-            Assert.AreEqual(driver.Title, "R Systems Interview Questions | Glassdoor");
+            Assert.AreEqual(_driver.Title, "R Systems Interview Questions | Glassdoor");
 
         }
 
@@ -90,13 +93,13 @@ namespace PageObjectCore.Base
 
     
 
-        [OneTimeTearDown]
-        public void TestFinsih()
-        {
-            driver.Manage().Window.Minimize();
-            DriverFactory.CloseDriver();
+        //[OneTimeTearDown]
+        //public void TestFinsih()
+        //{
+        //    driver.Manage().Window.Minimize();
+        //    DriverFactory.CloseDriver();
             
-        }
+        //}
         
         public void click_on_Blank(IWebDriver driver)
         {

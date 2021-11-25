@@ -12,7 +12,7 @@ namespace PageObjectCore.Base
 {
     [AllureNUnit]
     [Parallelizable(ParallelScope.Fixtures)]
-    [Category("Google")]
+    
     public class ParallelGoogleClass2: TestBase
     {
 
