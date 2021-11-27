@@ -17,8 +17,8 @@ namespace Web
 {
 
 
+    [TestFixture(Author = "unickq", Description = "Examples")]
     [AllureNUnit]
-    [TestFixture]
     public class TestBase
     {
         protected IWebDriver _driver;

@@ -13,8 +13,8 @@ using WebDriverManager.DriverConfigs.Impl;
 
 namespace PageObjectCore.Base
 {
+    [TestFixture(Author = "unickq", Description = "Examples")]
     [AllureNUnit]
-    //[TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
     [Category("Google")]
     public class ParallelGoogleClass1:TestBase

@@ -10,6 +10,7 @@ using Web;
 
 namespace PageObjectCore.Base
 {
+    [TestFixture(Author = "unickq", Description = "Examples")]
     [AllureNUnit]
     [Parallelizable(ParallelScope.Fixtures)]
     
