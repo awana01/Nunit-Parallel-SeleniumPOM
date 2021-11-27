@@ -71,11 +71,11 @@ namespace PageObjectCore.Base
 
             Console.WriteLine("Result Stat:" + SearchPage.result_Stat.Text);
 
-            var theNumber = SearchPage.result_Stat.Text.Where(x => char.IsNumber(x));
+            //var theNumber = SearchPage.result_Stat.Text.Where(x => char.IsNumber(x));
 
 
-            string num = new string(SearchPage.result_Stat.Text.Where(c => Char.IsDigit(c)).ToArray());
-            Console.WriteLine("Digits :" + num);
+            //string num = new string(SearchPage.result_Stat.Text.Where(c => Char.IsDigit(c)).ToArray());
+            //Console.WriteLine("Digits :" + num);
 
 
 
