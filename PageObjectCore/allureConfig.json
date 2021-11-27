@@ -1,6 +1,6 @@
 ﻿{
   "allure": {
-    "directory": "allure-results",
+    "directory": "/../../../../allure-results",
     "title": "Parallel Page Automation",
     "links": [
       "https://example.org/{issue}",

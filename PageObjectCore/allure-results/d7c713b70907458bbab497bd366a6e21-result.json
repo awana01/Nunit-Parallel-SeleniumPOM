@@ -1,0 +1,73 @@
+{
+  "uuid": "9e1118ad-9a70-4c18-aafc-a8815297a062-tr-0-1006",
+  "historyId": "PageObjectCore.Base.ParallelGoogleClass1.Test02_VerifyResultTest",
+  "fullName": "PageObjectCore.Base.ParallelGoogleClass1.Test02_VerifyResultTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-76N1JL0"
+    },
+    {
+      "name": "testClass",
+      "value": "PageObjectCore.Base.ParallelGoogleClass1"
+    },
+    {
+      "name": "testMethod",
+      "value": "Test02_VerifyResultTest"
+    },
+    {
+      "name": "package",
+      "value": "PageObjectCore.Base.ParallelGoogleClass1"
+    },
+    {
+      "name": "owner",
+      "value": "unickq"
+    },
+    {
+      "name": "tag",
+      "value": "Google"
+    }
+  ],
+  "links": [],
+  "name": "Test02_VerifyResultTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Test02_VerifyResultTest"
+  },
+  "stage": "finished",
+  "description": "Examples\n",
+  "steps": [
+    {
+      "name": "Test02_VerifyResultTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "37a4f7127e8c4b59b25b5413eff9ddbd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1638001626543,
+      "stop": 1638001643832
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1638001626543,
+  "stop": 1638001643833
+}
