@@ -1,0 +1,46 @@
+{
+  "uuid": "26a7ae28-8b71-48db-8b0f-5d8ab02c9834-tc-0-1004",
+  "name": "PageObjectCore.Base.ParallelGoogleClass1.Test01_VerifySearchTest",
+  "children": [
+    "2b69f5ca-3ddd-420b-9e89-ad116862e6bf-tr-0-1005"
+  ],
+  "befores": [
+    {
+      "name": "TestStartMethod",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1638002508427,
+      "stop": 1638002508427
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestFinishMethod",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1638002508428,
+      "stop": 1638002508428
+    }
+  ],
+  "links": [],
+  "start": 1638002497638,
+  "stop": 1638002508494
+}
